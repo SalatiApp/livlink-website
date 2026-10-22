@@ -37,6 +37,7 @@
     <li><b>Ville et quartier</b> associés à l’annonce.</li>
     <li><b>Contenu de l’annonce</b> : titre, détails et type d’annonce (demande de livraison ou offre de livraison).</li>
     <li><b>Localisation géographique</b> : strictement facultative. Nous ne la demandons que lorsque vous appuyez sur « Localiser via GPS » en publiant une demande de livraison. Vous pouvez aussi saisir l’adresse de la boutique manuellement ou laisser le champ vide.</li>
+    <li><b>Identifiant anonyme</b> créé automatiquement par l’Application (Firebase Anonymous Authentication), sans e-mail ni mot de passe ; il sert uniquement à relier vos annonces à votre appareil et à vous permettre, à vous seul, de les supprimer.</li>
     <li><b>Paramètres de l’application</b> tels que le mode sombre et le type de compte (commerçant ou livreur), enregistrés sur votre téléphone.</li>
   </ul>
 
@@ -53,12 +54,12 @@
   <p>Nous ne vendons pas vos informations et ne les partageons pas avec des annonceurs.</p>
 
   <h2>4. Où les informations sont stockées</h2>
-  <p>Certaines informations sont enregistrées sur votre téléphone. Lorsque la publication publique et les comptes sont activés, les données de compte et les annonces sont stockées chez le fournisseur de services cloud <b>Google Firebase</b> (vérification par numéro de téléphone et base de données), soumis aux politiques de Google. Les données transitent par une connexion chiffrée (HTTPS).</p>
+  <p>Les paramètres de l’application et les données de votre profil (nom et téléphone) sont enregistrés sur votre téléphone. <b>Les annonces que vous publiez</b> (y compris le nom, le numéro de téléphone, la ville, le quartier, les détails et la position de la boutique si vous l’avez indiquée) sont stockées chez le fournisseur de services cloud <b>Google Firebase</b> (base de données Firestore avec connexion anonyme), soumis aux politiques de Google. Les données transitent par une connexion chiffrée (HTTPS).</p>
 
   <h2>5. Durée de conservation</h2>
   <ul>
-    <li>Les annonces sont supprimées automatiquement <b>7 jours</b> après leur publication ; vous pouvez supprimer votre annonce à tout moment avant.</li>
-    <li>Les données de votre compte (nom et téléphone) sont conservées jusqu’à ce que vous demandiez leur suppression.</li>
+    <li>Les annonces sont supprimées automatiquement <b>7 jours</b> après leur publication ; vous pouvez supprimer votre annonce à tout moment avant. Les annonces expirées sont définitivement supprimées de la base de données par une tâche de nettoyage automatique.</li>
+    <li>Les données de votre profil (nom et téléphone) restent sur votre téléphone jusqu’à ce que vous les effaciez ou désinstalliez l’Application.</li>
   </ul>
 
   <h2>6. Vos droits</h2>
