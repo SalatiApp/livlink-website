@@ -37,6 +37,7 @@
     <li><b>City and neighborhood</b> linked to the listing.</li>
     <li><b>Listing content</b>: title, details, and listing type (delivery request or delivery offer).</li>
     <li><b>Location</b>: entirely optional. We only ask for it when you tap “Locate via GPS” while posting a delivery request. You can also type the shop address manually or leave it empty.</li>
+    <li><b>Anonymous identifier</b> created automatically by the App (Firebase Anonymous Authentication) with no email and no password; it is used only to link your listings to your device and to allow only you to delete them.</li>
     <li><b>App settings</b> such as dark mode and account type (shop owner or rider), stored on your phone.</li>
   </ul>
 
@@ -53,12 +54,12 @@
   <p>We do not sell your information and we do not share it with advertisers.</p>
 
   <h2>4. Where information is stored</h2>
-  <p>Some information is stored on your phone. When public posting and accounts are enabled, account data and listings are stored with the cloud provider <b>Google Firebase</b> (phone number verification and database), subject to Google’s policies. Data is transmitted over an encrypted connection (HTTPS).</p>
+  <p>App settings and your profile data (name and phone) are stored on your phone. <b>The listings you post</b> (including name, phone number, city, neighborhood, details, and the shop location if you provided one) are stored with the cloud provider <b>Google Firebase</b> (Firestore database with anonymous sign-in), subject to Google’s policies. Data is transmitted over an encrypted connection (HTTPS).</p>
 
   <h2>5. Retention</h2>
   <ul>
-    <li>Listings are deleted automatically <b>7 days</b> after posting, and you can delete your listing at any time before that.</li>
-    <li>Your account data (name and phone) is kept until you ask for it to be deleted.</li>
+    <li>Listings are deleted automatically <b>7 days</b> after posting, and you can delete your listing at any time before that. Expired listings are permanently removed from the database by an automatic cleanup task.</li>
+    <li>Your profile data (name and phone) stays on your phone until you clear it or uninstall the App.</li>
   </ul>
 
   <h2>6. Your rights</h2>
