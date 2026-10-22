@@ -12,12 +12,72 @@
   <link rel="alternate" hreflang="en" href="index-en.html">
   <link rel="alternate" hreflang="x-default" href="index.html">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* ===== Compact centered header ===== */
+    header .bar{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:10px 16px !important;
+      min-height:0 !important;
+      height:auto !important;
+      text-align:center;
+    }
+    header .brand{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      gap:0;
+      text-align:center;
+    }
+    header .brand span{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:2px;
+      text-align:center;
+      width:100%;
+    }
+    header .brand b{
+      display:block;
+      font-size:28px;
+      line-height:1.15;
+      letter-spacing:2px;
+      margin:0;
+    }
+    header .brand small{
+      display:block;
+      font-size:15px;
+      line-height:1.3;
+      margin:0;
+    }
+    header .langs{
+      display:flex;
+      flex-wrap:nowrap;
+      justify-content:center;
+      align-items:center;
+      gap:6px;
+      margin:0;
+      width:100%;
+    }
+    header .langs a{
+      font-size:12px !important;
+      line-height:1.4 !important;
+      padding:4px 12px !important;
+      min-height:0 !important;
+      height:auto !important;
+    }
+  </style>
 </head>
 <body>
 <header>
   <div class="wrap bar">
     <a class="brand" href="index.html">
-      <img src="logo.png" alt="شعار LIVLINK">
       <span><b>LIVLINK</b><small>منصة ربط المحلات بالليفرورات</small></span>
     </a>
     <nav class="langs" aria-label="Language"><a href="index.html" class="on" aria-current="true" lang="ar">العربية</a><a href="index-fr.html" lang="fr">Français</a><a href="index-en.html" lang="en">English</a></nav>
